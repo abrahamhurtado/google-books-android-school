@@ -42,7 +42,7 @@ class BookAdapter: RecyclerView.Adapter<BookAdapter.BookHolder> () {
         fun bindData(book: Book) {
             titleTV.text = book.volumeInfo.title
             publishTV.text = book.volumeInfo.publishedDate
-//            Picasso.with(itemView.context).load("url-del-thumnail").into(thumbnailIV)
+            Picasso.with(itemView.context).load(book.volumeInfo.imageLinks.thumbnail).into(thumbnailIV)
         }
     }
 }
