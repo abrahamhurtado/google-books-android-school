@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoogleBooks.iml" filepath="$PROJECT_DIR$/GoogleBooks.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google-books-android-school.iml" filepath="$PROJECT_DIR$/google-books-android-school.iml" />
     </modules>
   </component>
 </project>
