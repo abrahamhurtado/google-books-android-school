@@ -11,16 +11,18 @@ data class VolumeInfo (
         @SerializedName("publisher") val publisher : String,
         @SerializedName("publishedDate") val publishedDate : String,
         @SerializedName("description") val description : String,
-        @SerializedName("intrustryIdentifiers") val industryIndentifiers : List<IndustryIdentifier>,
-        @SerializedName("readingModes") val readingModes : ReadingModes,
-        @SerializedName("pageCount") val pageCount : Int,
-        @SerializedName("printType") val printType : String,
-        @SerializedName("categories") val categories : List<String>,
-        @SerializedName("maturityRating") val maturityRating: String,
-        @SerializedName("allowAnonLogging") val allowAnonLoggin : Boolean,
-        @SerializedName("contentVersion") val contentVersion : String,
-        @SerializedName("imageLinks") val imageLinks : ImageLinks,
-        @SerializedName("language") val language : String,
-
+//        @SerializedName("intrustryIdentifiers") val industryIndentifiers : List<IndustryIdentifier>,
+//        @SerializedName("readingModes") val readingModes : ReadingModes,
+//        @SerializedName("pageCount") val pageCount : Int,
+//        @SerializedName("printType") val printType : String,
+//        @SerializedName("categories") val categories : List<String>,
+//        @SerializedName("maturityRating") val maturityRating: String,
+//        @SerializedName("allowAnonLogging") val allowAnonLoggin : Boolean,
+//        @SerializedName("contentVersion") val contentVersion : String,
+        @SerializedName("imageLinks") val imageLinks : ImageLinks
+//        @SerializedName("language") val language : String,
+//        @SerializedName("previewLink") val previewLink : String,
+//        @SerializedName("infoLink") val infoLink : String,
+//        @SerializedName("canonicalVolumeLink") val infoLin
 ) {
 }
