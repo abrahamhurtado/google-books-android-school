@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val jsonString = "";
 
+        val jsonString = "";
         val gson = Gson()
         val list1 = gson.fromJson<List<BookDos>>(jsonString);
     }
