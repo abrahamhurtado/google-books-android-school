@@ -1,6 +1,7 @@
 package com.example.abraham.googlebooks.Service
 
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -19,11 +20,19 @@ class BooksAdapter: RecyclerView.Adapter<BooksAdapter.BookHolder> () {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): BookHolder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val inflater = LayoutInflater.from(parent?.context)
+        val view = inflater.inflate(R.layout.book_card, parent, false)
+        return BookHolder(view)
     }
 
     override fun getItemCount(): Int {
         return books.size
+    }
+
+    fun updateBooks(books: List<Book>) {
+        this.books.clear()
+        this.books.addAll(books)
+        notifyDataSetChanged()
     }
 
     val books: MutableList<Book> = mutableListOf()
