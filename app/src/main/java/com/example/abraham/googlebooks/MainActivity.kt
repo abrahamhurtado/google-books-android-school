@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        bookRV.layoutManager = ConstraintLayoutManager(this)
+        bookRV.layoutManager = LinearLayoutManager(this)
         bookRV.adapter = bookAdapter
 
         val retrofit = Retrofit.Builder()
